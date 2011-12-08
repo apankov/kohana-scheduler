@@ -1,0 +1,198 @@
+* { padding:0; margin:0; }
+
+body {
+  background: #fff;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 12px;
+  color: #2b2b2b;
+  line-height: 20px;
+  webkit-text-size-adjust: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  color: #204a87;
+  text-decoration: underline;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 90%;
+  min-width: 960px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.task {
+}
+  .task.suspended {
+    background-color: #eeeeec;
+  }
+  .task.disabled {
+    background-color: #2e3436;
+    color: #d3d7cf;
+  }
+    .task.disabled a {
+      color: #fff;
+    }
+  .task .datetime-error {
+    background-color: #ef2929;
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+.task_details {
+}
+  .task_details.active {
+    background-color: #f4f4f4;
+  }
+  .task_details.disabled {
+    background-color: #2e3436;
+    color: #fff;
+  }
+  .task_details.suspended {
+    background-color: #eeeeec;
+    color: #222;
+  }
+  .task_details .general {
+    float: left;
+    width: 460px;
+  }
+  .task_details .args {
+    float: left;
+    margin-left: 10px;
+  }
+  .task_details .param {
+    clear:both;
+    padding: 5px;
+  }
+  .task_details .title {
+    font-weight: bold;
+    float: left;
+    width: 150px;
+  }
+  .task_details .value {
+    float: left;
+    margin-left: 10px;
+  }
+  .task_details .smaller {
+    font-size: smaller;
+  }
+
+.block {
+  clear: both;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+  .block table {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+    .block table tr td,
+    .block table tr th {
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+      line-height: normal;
+      text-align: left;
+    }
+  .block hr {
+    height: 1px;
+    border: 0;
+    background: no-repeat;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+  }
+  .block form {
+  }
+    .block form p {
+      overflow: hidden;
+      clear: both;
+    }
+    .block form label {
+      font-size: 12px;
+      font-weight: bold;
+      color: #555;
+      margin-right: 10px;
+      vertical-align: middle;
+      display: block;
+    }
+      .block form label .label-error {
+        color: #ef2929;
+      }
+    .block form input.text {
+      width: 410px;
+      background: #fefefe;
+      border: 1px solid #bbb;
+      font-size: 14px;
+      color: #333;
+      padding: 7px;
+      vertical-align: middle;
+    }
+    .block form textarea {
+      width: 98%;
+      height: 140px;
+      padding: 5px;
+      background: #fefefe;
+      border: 1px solid #bbb;
+      font-size: 14px;
+      color: #333;
+    }
+      .block form input.error,
+      .block form textarea.error {
+        border: 1px solid #ef2929;
+      }
+    .block form input.radio,
+    .block form input.checkbox {
+      vertical-align: middle;
+    }
+    .block form .note {
+      padding-left: 10px;
+      font-size: 11px;
+      font-weight: bold;
+      color: #757575;
+      vertical-align: middle;
+    }
+      .block form .note.error {
+        color: #ef2929;
+      }
+    .block form input.submit {
+      width: 85px;
+      height: 30px;
+      line-height: 30px;
+      border: 0;
+      font-size: 14px;
+      color: #fff;
+      background-color: #3465a4;
+      cursor: pointer;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    .block form .cancel {
+      padding: 7px 20px 7px 20px;
+      line-height: 30px;
+      border: 0;
+      font-size: 14px;
+      color: #000;
+      background-color: transparent;
+      cursor: pointer;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+      .block form .cancel:hover {
+        background-color: silver;
+      }
