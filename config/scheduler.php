@@ -10,7 +10,7 @@ return array(
 			'media/styles/scheduler.css',
 		),
 		'scripts' => array(
-			'media/vendor/jquery-1.6.4.min.js',
+			'jquery' => 'media/vendor/jquery-1.6.4.min.js',
 			'media/javascript/scheduler.js',
 		),
 	),
