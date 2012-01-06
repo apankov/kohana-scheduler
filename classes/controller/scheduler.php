@@ -13,9 +13,9 @@ class Controller_Scheduler extends Controller_Template {
 		{
 			$this->request->redirect('/');
 		}
-		$config = Kohana::$config->load('scheduler.assets');
-		$this->template->styles = $config['stylesheets'];
-		$this->template->scripts = $config['scripts'];
+		$config = Kohana::$config->load('scheduler');
+		$this->template->styles = $config['assets']['stylesheets'];
+		$this->template->scripts = $config['assets']['scripts'];
 	}
 
 	public function action_index()
