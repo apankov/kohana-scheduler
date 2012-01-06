@@ -55,7 +55,6 @@ class Controller_Scheduler extends Controller_Template {
 				'queue' => Arr::get($_POST, 'queue'),
 				'args' => Arr::get($_POST, 'args'),
 				'status' => Arr::get($_POST, 'status'),
-				'created_at' => DB::expr('UNIX_TIMESTAMP()'),
 		));
 
 		if ($crontab = Arr::get($_POST, 'crontab'))
