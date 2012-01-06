@@ -84,7 +84,7 @@ class Scheduler {
 	{
 		$next_tasks = ORM::factory('scheduler_task')
 			->where('status', '=', 'active')
-			->where(DB::expr('ABS(UNIX_TIMESTAMP() - next_scheduled_at))'), '<=', $this->config->check_interval)
+			->where(DB::expr('ABS(UNIX_TIMESTAMP() - next_scheduled_at)'), '<=', $this->config->check_interval)
 			->find_all();
 
 		foreach ($next_tasks as $task)
