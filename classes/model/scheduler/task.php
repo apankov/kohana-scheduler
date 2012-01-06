@@ -55,7 +55,7 @@ class Model_Scheduler_Task extends ORM {
 		}
 		if (empty($this->args))
 		{
-			$this->args = '[]';
+			$this->args = '{}';
 		}
 	}
 

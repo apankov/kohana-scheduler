@@ -10,6 +10,6 @@ return array(
 	'args' => array(
 		'not_empty' => 'cannot be empty',
 		'not_valid_json' => 'should be valid JSON (parsable by PHP json_decode())',
-		'not_array' => 'should be JSON encoded array ( [ ... ] )',
+		'not_array' => 'should be JSON encoded hash ( { ... } )',
 	),
 );

@@ -72,7 +72,7 @@ if ($error = Arr::get($errors, 'args'))
 echo form::label('args', $label);
 echo form::textarea('args', $task->args, array(
 		'class' => 'text ' . (isset($errors['args']) ? 'error' : ''),
-		'placeholder' => '[]',
+		'placeholder' => '{}',
 	));
 ?>
 </p>
